@@ -7,14 +7,14 @@ resource "panos_panorama_device_group" "this" {
 }
 
 resource "panos_panorama_template_stack" "this" {
-  name = "test-commit"
+  name = "test-commit-stack"
   templates = [
     panos_panorama_template.this.name,
   ]
 }
 
 resource "panos_panorama_template" "this" {
-  name = "test-commit"
+  name = "test-commit-template"
 }
 
 # =====================================================================================================================
