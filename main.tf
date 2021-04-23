@@ -8,6 +8,13 @@ resource "panos_panorama_device_group" "this" {
 
 resource "panos_panorama_template_stack" "this" {
   name = "test-commit"
+  templates = [
+    panos_panorama_template.this.name,
+  ]
+}
+
+resource "panos_panorama_template" "this" {
+  name = "test-commit"
 }
 
 # =====================================================================================================================
@@ -24,5 +31,6 @@ module "commit" {
   depends_on = [
     panos_panorama_device_group.this,
     panos_panorama_template_stack.this,
+    panos_panorama_template.this,
   ]
 }
