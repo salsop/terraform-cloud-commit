@@ -2,7 +2,7 @@
 
 This is a quick example of a workaround to allow Panorama to perform a commit operation after any changes to Panorama Resources.
 
-:exclamation: As this uses the HTTP Data Source, this commit operation runs on `terraform plan`, `terraform apply`, `terraform destory`. On `terraform destroy` the commit will not run at the end of the destroy process.
+:exclamation: As this uses the HTTP Data Source, this commit operation runs on `terraform plan`, `terraform apply`, and at the start of a `terraform destory`. When running a `terraform destroy` the commit will not run at the end of the destroy process.
 
 ## How to use this workaround
 
