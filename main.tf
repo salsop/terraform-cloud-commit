@@ -3,7 +3,7 @@
 # =====================================================================================================================
 
 resource "panos_panorama_device_group" "this" {
-  name = "test-commit"
+  name = "test-commit-dg"
 }
 
 resource "panos_panorama_template_stack" "this" {
