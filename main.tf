@@ -2,9 +2,9 @@
 #   Panorama Configuration - Example of multiple resource changes
 # =====================================================================================================================
 
-resource "panos_panorama_device_group" "this" {
-  name = "test-commit-dg"
-}
+//resource "panos_panorama_device_group" "this" {
+//  name = "test-commit-dg"
+//}
 
 resource "panos_panorama_template_stack" "this" {
   name = "test-commit-stack"
