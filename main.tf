@@ -29,7 +29,7 @@ module "commit" {
 
   # List all PANOS Objects as dependencies to ensure commit executes after all resources have been created.
   depends_on = [
-    panos_panorama_device_group.this,
+//    panos_panorama_device_group.this,
     panos_panorama_template_stack.this,
     panos_panorama_template.this,
   ]
